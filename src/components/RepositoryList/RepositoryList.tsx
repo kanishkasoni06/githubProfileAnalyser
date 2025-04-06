@@ -3,7 +3,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Badge } from '@/components/ui/badge';
 import { Star, GitFork } from 'lucide-react';
 import { Repo } from '@/types/github';
-import "../App.css"
+import "./RepositoryList.css"
 
 export default function RepositoryList({ repos }: { repos: Repo[] }) {
   return (

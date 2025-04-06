@@ -11,8 +11,8 @@ import {
   Legend,
 } from 'chart.js';
 import { useEffect, useState } from 'react';
+import "./CommitChart.css"
 
-// Register ChartJS components
 ChartJS.register(
   CategoryScale,
   LinearScale,

@@ -71,7 +71,7 @@ button:focus-visible {
 
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
 :root {
   /* Original OKLCH variables */
@@ -351,12 +351,12 @@ button:focus-visible {
   --color-sidebar-ring: var(--sidebar-ring);
 } */
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+* {
+  border-color: var(--border-color);
+  outline-color: var(--ring-color);
 }
 
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

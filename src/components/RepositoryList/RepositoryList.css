@@ -1,0 +1,21 @@
+.repo-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .repo-table th {
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  .repo-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .repo-table tr:hover {
+    background-color: rgba(141, 169, 196, 0.1);
+  }

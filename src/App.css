@@ -75,28 +75,7 @@
   cursor: not-allowed;
 }
 
-/* Repository Table */
-.repo-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
 
-.repo-table th {
-  background: var(--primary);
-  color: white;
-  padding: 0.75rem 1rem;
-  text-align: left;
-}
-
-.repo-table td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.repo-table tr:hover {
-  background-color: rgba(141, 169, 196, 0.1);
-}
 
 /* Badges */
 .language-badge {
@@ -105,26 +84,6 @@
   border-radius: 9999px;
   border: 1px solid var(--border);
   font-size: 0.75rem;
-}
-
-/* Chart Container */
-.chart-container {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 0.625rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
-  min-height: 300px;
-  position: relative;
-}
-
-.chart-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  color: #666;
-  font-style: italic;
 }
 
 /* Error Message */
