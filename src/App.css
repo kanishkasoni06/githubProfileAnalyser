@@ -1,0 +1,145 @@
+/* Base Styles */
+:root {
+  /* Color Scheme */
+  --primary-dark: #6b9080;
+  --primary: #a4c3b2;
+  --primary-light: #cce3de;
+  --secondary: #eaf4f4;
+  --background: #f6fff8;
+  
+  /* Additional UI Colors */
+  --text-primary: #0B2545;
+  --text-secondary: #2D3748;
+  --border: #CBD5E0;
+  --error: #E53E3E;
+}
+
+/* Layout */
+.app-container {
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 0.625rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+}
+
+.card-header {
+  color: white;
+  background: var(--primary-dark);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+}
+
+/* Form Elements */
+.search-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.search-button {
+  background: var(--primary-dark);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.search-button:hover {
+  background: var(--primary);
+}
+
+.search-button:disabled {
+  background: var(--secondary);
+  cursor: not-allowed;
+}
+
+/* Repository Table */
+.repo-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.repo-table th {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.repo-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.repo-table tr:hover {
+  background-color: rgba(141, 169, 196, 0.1);
+}
+
+/* Badges */
+.language-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  font-size: 0.75rem;
+}
+
+/* Chart Container */
+.chart-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  min-height: 300px;
+  position: relative;
+}
+
+.chart-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Error Message */
+.error-message {
+  color: var(--error);
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
